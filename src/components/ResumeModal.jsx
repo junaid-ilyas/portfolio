@@ -95,7 +95,7 @@ export const ResumeModal = ({ onClose }) => {
               <span>•</span>
               <a href={SCHOLAR_INFO.links.github} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-[#0F172A] transition-colors">
                 <Github className="w-3.5 h-3.5 text-slate-700" />
-                <span>github.com/Hydro-lab-del</span>
+                <span>https://github.com/junaid-ilyas</span>
               </a>
               <span>•</span>
               <a href={SCHOLAR_INFO.links.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-[#0F172A] transition-colors">

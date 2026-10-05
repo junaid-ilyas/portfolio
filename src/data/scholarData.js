@@ -10,7 +10,7 @@ export const SCHOLAR_INFO = {
   bio: "Passionate about engineering responsive React frontends, secure Node.js & Express REST APIs, and clean database architectures with MongoDB Atlas.",
   contactEmail: "j8881817@gmail.com",
   links: {
-    github: "https://github.com/Hydro-lab-del",
+    github: "https://github.com/junaid-ilyas",
     linkedin: "https://www.linkedin.com/in/muhammad-junaid-ilyas-9769a4324",
     email: "mailto:j8881817@gmail.com"
   }
@@ -110,4 +110,3 @@ export const SKILL_CATEGORIES = [
     ]
   }
 ];
-

@@ -179,7 +179,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <div className="font-bold text-xs text-[#0F172A] group-hover:text-slate-700 transition-colors">GitHub Repositories</div>
-                  <div className="text-[11px] text-slate-500 font-label-sm truncate">Hydro-lab-del</div>
+                  <div className="text-[11px] text-slate-500 font-label-sm truncate">junaid-ilyas</div>
                 </div>
               </a>
             </div>

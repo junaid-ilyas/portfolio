@@ -50,7 +50,7 @@ My portfolio website — built with React 19, Three.js, and Tailwind CSS. Shows 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Hydro-lab-del/portfolio.git
+   git clone https://github.com/junaid-ilyas/portfolio.git
    cd portfolio
    ```
 
@@ -81,7 +81,7 @@ To enable the **"Download Academic CV"** button:
 
 This repository includes [`vercel.json`](vercel.json) and [`public/_redirects`](public/_redirects) for client-side routing:
 
-1. Push this repository to your GitHub account (`Hydro-lab-del`).
+1. Push this repository to your GitHub account (`junaid-ilyas`).
 2. Visit [vercel.com](https://vercel.com) and log in with GitHub.
 3. Click **"Add New Project"** and import your portfolio repository.
 4. Framework Preset will automatically detect **Vite**.
@@ -93,7 +93,7 @@ This repository includes [`vercel.json`](vercel.json) and [`public/_redirects`](
 
 - **Email**: [j8881817@gmail.com](mailto:j8881817@gmail.com)
 - **LinkedIn**: [Muhammad Junaid Ilyas](https://www.linkedin.com/in/muhammad-junaid-ilyas-9769a4324)
-- **GitHub**: [@Hydro-lab-del](https://github.com/Hydro-lab-del)
+- **GitHub**: [@junaid-ilyas](https://github.com/junaid-ilyas)
 
 ---
 
