@@ -49,7 +49,7 @@ export const ContactSection = () => {
     setSubmitError('');
 
     try {
-      // Direct Real Email Dispatch to j8881817@gmail.com via FormSubmit.co
+      // Direct Real Email Dispatch to work.muhammadjunaid@gmail.com via FormSubmit.co
       const response = await fetch(`https://formsubmit.co/ajax/${SCHOLAR_INFO.contactEmail}`, {
         method: 'POST',
         headers: { 

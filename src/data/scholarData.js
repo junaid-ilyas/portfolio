@@ -8,11 +8,11 @@ export const SCHOLAR_INFO = {
   badge: "Available for MERN Opportunities",
   subtitle: "BS Computer Science (2023 — 2027) • PEEF Merit Scholar",
   bio: "Passionate about engineering responsive React frontends, secure Node.js & Express REST APIs, and clean database architectures with MongoDB Atlas.",
-  contactEmail: "j8881817@gmail.com",
+  contactEmail: "work.muhammadjunaid@gmail.com",
   links: {
     github: "https://github.com/junaid-ilyas",
     linkedin: "https://www.linkedin.com/in/muhammad-junaid-ilyas-9769a4324",
-    email: "mailto:j8881817@gmail.com"
+    email: "mailto:work.muhammadjunaid@gmail.com"
   }
 };
 

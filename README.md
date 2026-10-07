@@ -91,7 +91,7 @@ This repository includes [`vercel.json`](vercel.json) and [`public/_redirects`](
 
 ## 📬 Contact & Connect
 
-- **Email**: [j8881817@gmail.com](mailto:j8881817@gmail.com)
+- **Email**: [work.muhammadjunaid@gmail.com](mailto:work.muhammadjunaid@gmail.com)
 - **LinkedIn**: [Muhammad Junaid Ilyas](https://www.linkedin.com/in/muhammad-junaid-ilyas-9769a4324)
 - **GitHub**: [@junaid-ilyas](https://github.com/junaid-ilyas)
 
