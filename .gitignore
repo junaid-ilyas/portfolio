@@ -10,3 +10,7 @@ coverage/
 # Exclude personal resume PDF from git
 public/resume.pdf
 public/*.pdf
+
+# AI Studio settings
+assets/.aistudio
+.aistudio
