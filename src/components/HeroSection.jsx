@@ -60,12 +60,12 @@ export const HeroSection = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               href="/resume.pdf"
-              download="CS_Scholar_CV.pdf"
+              download="Junaid_Ilyas_Resume.pdf"
               id="hero-download-resume-btn"
               className="focus-ring inline-flex cursor-pointer items-center gap-2 rounded-xl border border-[#EAE1D4] bg-white px-6 py-2.5 font-label-md text-label-md text-[#1C1917] transition-colors hover:bg-[#F7F4EE]"
             >
               <Download className="h-4 w-4 text-[#2f4a3a]" aria-hidden="true" />
-              <span>Download CV</span>
+              <span>Download Resume</span>
             </motion.a>
           </motion.div>
         </motion.div>

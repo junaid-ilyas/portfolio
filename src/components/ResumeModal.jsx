@@ -51,7 +51,7 @@ export const ResumeModal = ({ onClose }) => {
           <div className="flex items-center gap-2">
             <a
               href="/resume.pdf"
-              download="Junaid_Ilyas_CV.pdf"
+              download="Junaid_Ilyas_Resume.pdf"
               className="flex items-center gap-1.5 px-3 py-1.5 bg-[#0F172A] hover:bg-on-surface-variant text-white rounded-lg font-label-sm text-xs font-semibold transition-colors shadow-xs cursor-pointer"
             >
               <Download className="w-3.5 h-3.5" />
@@ -170,7 +170,7 @@ export const ResumeModal = ({ onClose }) => {
                   <span>Core Languages</span>
                 </div>
                 <p className="text-on-surface-variant leading-relaxed">
-                  JavaScript (ES6+), HTML5, CSS3, SQL
+                  JavaScript (ES6+), HTML5, CSS3
                 </p>
               </div>
 
@@ -221,18 +221,33 @@ export const ResumeModal = ({ onClose }) => {
                 </p>
               </div>
 
-              {/* Quadruped Robot */}
+              {/* Scanner Hardware Simulator */}
               <div className="p-4 sm:p-5 border border-outline-variant rounded-xl bg-[#F9FAFB] space-y-2">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
                   <div className="font-headline-md text-sm font-bold text-[#0F172A]">
-                     Quadruped Robot Platform (Hardware Showcase)
+                    Scanner Hardware Simulator
                   </div>
-                   <span className="font-label-sm text-[11px] text-[#0F172A] bg-white px-2 py-0.5 rounded border border-outline-variant w-fit font-semibold">
-                     ESP32-S2 Mini • SG90 Servos • Hardware Showcase
+                  <span className="font-label-sm text-[11px] text-[#0F172A] bg-white px-2 py-0.5 rounded border border-outline-variant w-fit font-semibold">
+                    React • Three.js • CAD • ESP32
                   </span>
                 </div>
                 <p className="font-body-sm text-xs text-on-surface-variant leading-relaxed">
-                   Exploratory hardware & robotics project: Built a 3D-printed quadruped walking robot platform powered by an ESP32-S2 microcontroller, 0.96" I2C OLED display rendering dynamic expressions, and SG90 servo kinematics with desktop control.
+                  Built an interactive browser-based digital twin for a low-cost document scanner concept, with simulated scanner controls, 3D assembly and CAD exports, and ESP32 firmware references.
+                </p>
+              </div>
+
+              {/* Sesame AI Companion */}
+              <div className="p-4 sm:p-5 border border-outline-variant rounded-xl bg-[#F9FAFB] space-y-2">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                  <div className="font-headline-md text-sm font-bold text-[#0F172A]">
+                    Sesame AI Companion
+                  </div>
+                   <span className="font-label-sm text-[11px] text-[#0F172A] bg-white px-2 py-0.5 rounded border border-outline-variant w-fit font-semibold">
+                     ESP32-S2 • C++ • Python • Voice + AI
+                  </span>
+                </div>
+                <p className="font-body-sm text-xs text-on-surface-variant leading-relaxed">
+                   A custom ESP32-S2 quadruped with eight servo channels and an animated 128 × 64 OLED face, paired with a Python desktop companion for movement controls, voice interaction, and AI-backed conversation.
                 </p>
               </div>
 

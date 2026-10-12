@@ -13,7 +13,7 @@ import { ContactSection } from './components/ContactSection';
 // Lazily Loaded Modals & Sub-Pages (Loaded On-Demand)
 const ResumeModal = lazy(() => import('./components/ResumeModal').then(m => ({ default: m.ResumeModal })));
 const ContactModal = lazy(() => import('./components/ContactModal').then(m => ({ default: m.ContactModal })));
-const ChemistryLabPage = lazy(() => import('./components/ChemistryLabPage').then(m => ({ default: m.ChemistryLabPage })));
+const ProjectStudyPage = lazy(() => import('./components/ProjectStudyPage').then(m => ({ default: m.ProjectStudyPage })));
 const NotesNestPage = lazy(() => import('./components/NotesNestPage').then(m => ({ default: m.NotesNestPage })));
 const RobotProjectPage = lazy(() => import('./components/RobotProjectPage').then(m => ({ default: m.RobotProjectPage })));
 
@@ -47,6 +47,8 @@ const HomeView = ({ onOpenResume, onOpenContact }) => {
       navigate('/notesnest');
     } else if (project.id === 'quadruped-robot-ai' || project.modalType === 'robot' || project.modalType === 'robot-detail') {
       navigate('/robot');
+    } else if (project.id === 'smartphone-document-scanner' || project.modalType === 'scanner-detail') {
+      navigate('/scanner-simulator');
     }
   };
 
@@ -84,7 +86,11 @@ export default function App() {
 
             {/* Dedicated Case Study Routes */}
             <Route path="/chemistry-lab" element={
-              <ChemistryLabPage onOpenContact={() => setIsContactOpen(true)} />
+              <ProjectStudyPage studyKey="chemistry-lab" onOpenContact={() => setIsContactOpen(true)} />
+            } />
+
+            <Route path="/scanner-simulator" element={
+              <ProjectStudyPage studyKey="smartphone-document-scanner" onOpenContact={() => setIsContactOpen(true)} />
             } />
             
             <Route path="/notesnest" element={
@@ -117,4 +123,3 @@ export default function App() {
     </Router>
   );
 }
-

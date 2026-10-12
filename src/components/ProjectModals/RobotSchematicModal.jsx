@@ -19,7 +19,7 @@ import {
   Sparkles,
   Info
 } from 'lucide-react';
-import robotSchematic from '../../../assets/robot-schematic.svg';
+import robotSchematic from '../../../assets/robot-schematic.png';
 import robotPreview from '../../../assets/robot-preview.jpg';
 
 export const RobotSchematicModal = ({ project, onClose }) => {

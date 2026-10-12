@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles, Cpu, FileText, FlaskConical, Box, ExternalLink } from 'lucide-react';
+import { ArrowRight, ExternalLink, FlaskConical, ScanLine } from 'lucide-react';
 import { PROJECTS_DATA } from '../data/scholarData';
 
 const cardVariants = {
@@ -43,8 +43,8 @@ export const ProjectsSection = ({ onSelectProject }) => {
         <div className="grid grid-cols-1 gap-8 sm:gap-10">
           {PROJECTS_DATA.map((project, index) => {
             const isReverse = index % 2 === 1;
-            const isChemistryLab = project.id === 'virtual-chemistry-lab';
             const isRobot = project.id === 'quadruped-robot-ai';
+            const isScanner = project.id === 'smartphone-document-scanner';
 
             return (
               <motion.article
@@ -69,19 +69,32 @@ export const ProjectsSection = ({ onSelectProject }) => {
                   } border-outline-variant `}
                   onClick={() => onSelectProject && onSelectProject(project)}
                 >
-                  <img
-                    src={project.image}
-                    alt={project.imageAlt}
-                    width={project.imageWidth}
-                    height={project.imageHeight}
-                    className={`aspect-video w-full rounded-xl border border-outline-variant shadow-sm transition-transform duration-500 group-hover/img:scale-[1.015] ${
-                      isRobot 
-                        ? 'object-contain bg-slate-900/5 p-1 sm:p-2' 
-                        : 'object-cover'
-                    }`}
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.imageAlt}
+                      width={project.imageWidth}
+                      height={project.imageHeight}
+                      className={`aspect-video w-full rounded-xl border border-outline-variant shadow-sm transition-transform duration-500 group-hover/img:scale-[1.015] ${
+                        isRobot
+                          ? 'object-contain bg-slate-900/5 p-1 sm:p-2'
+                          : 'object-cover'
+                      }`}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : (
+                    <div className={`flex aspect-video w-full flex-col items-center justify-center gap-4 rounded-xl border border-outline-variant ${
+                      isScanner
+                        ? 'bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950 text-cyan-300'
+                        : 'bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 text-blue-700'
+                    }`}>
+                      {isScanner ? <ScanLine className="h-16 w-16" strokeWidth={1.25} /> : <FlaskConical className="h-16 w-16" strokeWidth={1.25} />}
+                      <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em]">
+                        {isScanner ? 'Interactive digital twin' : 'Chemistry lab · in development'}
+                      </span>
+                    </div>
+                  )}
 
                   {project.liveUrl && (
                     <a
@@ -91,7 +104,7 @@ export const ProjectsSection = ({ onSelectProject }) => {
                       onClick={(e) => e.stopPropagation()}
                       className="absolute right-4 top-4 z-10 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/90 px-3 py-1.5 font-label-sm text-label-sm font-semibold text-slate-900 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300"
                     >
-                      <span>Open NotesNest</span>
+                      <span>Open live demo</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   )}
@@ -109,7 +122,7 @@ export const ProjectsSection = ({ onSelectProject }) => {
                         <span
                           key={tag}
                           className={`rounded-full border px-2.5 py-1 font-label-sm text-label-sm transition-colors ${
-                            tag === 'Final Year Project' || tag === 'Interactive 3D GLB'
+                            tag === 'Final Year Project' || tag === 'Interactive 3D GLB' || tag === 'In Development'
                               ? 'border-gray-300 bg-white font-semibold text-gray-900'
                               : 'border-gray-200 bg-gray-100 text-gray-700 hover:bg-gray-200'
                           }`}
